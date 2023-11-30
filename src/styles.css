@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+}
+
+html{
+  height: 100vh;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+:root{
+  --white: hsl(0, 0%, 100%);
+  --red: hsl(0, 97%, 63%);
+  --blue-1: hsl(223, 23%, 46%);
+  --blue-2: hsl(223, 30%, 9%);
+  --blue-3: hsl(223, 36%, 14%);
+}
