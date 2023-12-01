@@ -1,0 +1,92 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 3rem;
+}
+
+.container .logo{
+  width: 32px;
+  height: 25.6px;
+}
+
+.container .form{
+  width: 327px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-2);
+  padding-top: 1.5rem;
+  border-radius: 8px;
+}
+
+.container .form .form-container{
+  width: 279px;
+  /* display: flex;
+  flex-direction: column;
+  gap: 2.2rem; */
+}
+
+.container .form .form-container .form-title{
+  width: auto;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -.5px;
+  color: var(--white);
+  margin-bottom: 2.3rem;
+}
+
+.container .form .form-container .form-inputs-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.3rem;
+}
+
+.container .form .form-container .form-inputs-container .input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--blue-3);
+  outline: none;
+  background-color:transparent;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.container .form .form-container .form-inputs-container .input::placeholder{
+  font-size: .9375rem;
+  font-weight: 300;
+  color: var(--white);
+  opacity: .5;
+
+}
+
+.container .form .form-container .auth-button{
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background-color: var(--red);
+  border: none;
+  font-size: .9375rem;
+  font-weight: 300;
+  color: var(--white);
+}
+
+.container .form .form-container .question{
+  font-size: .9375rem;
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: .5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.container .form .form-container .question .action{
+  color: var(--red);
+  margin-left: .4rem;
+}

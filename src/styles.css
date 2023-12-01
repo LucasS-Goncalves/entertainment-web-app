@@ -4,10 +4,12 @@
   box-sizing: border-box;
   font-size: 16px;
   font-family: 'Outfit', sans-serif;
+  caret-color: var(--red);
 }
 
 html{
   height: 100vh;
+  background-color: var(--blue-1);
 }
 
 p,h1,h2,h3,h4,h5,h6{
@@ -22,7 +24,7 @@ ul{
 :root{
   --white: hsl(0, 0%, 100%);
   --red: hsl(0, 97%, 63%);
-  --blue-1: hsl(223, 23%, 46%);
-  --blue-2: hsl(223, 30%, 9%);
-  --blue-3: hsl(223, 36%, 14%);
+  --blue-1: hsl(223, 30%, 9%);
+  --blue-2: hsl(223, 36%, 14%);
+  --blue-3: hsl(223, 23%, 46%);
 }
