@@ -99,3 +99,22 @@
     width: 336px;
   }
 }
+
+@media(min-width: 1200px){
+
+  .container .form .form-container .auth-button,
+  .container .form .form-container .question .action{
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  .container .form .form-container .auth-button:hover{
+    color: var(--blue-1);
+    background-color: var(--white);
+  }
+
+  .container .form .form-container .question .action:hover{
+    color: var(--white);
+  }
+}
+
