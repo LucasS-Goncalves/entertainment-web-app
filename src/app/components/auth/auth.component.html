@@ -1,16 +1,41 @@
 <div class="container">
   <img src="../../../assets/logo.svg" class="logo" alt="Entertainment Web App Logo">
-  <form class="form">
+  <form class="form" [formGroup]="authForm">
     <div class="form-container">
-      <h1 class="form-title">Login</h1>
+      <h1 class="form-title">{{ isLoginMode ? 'Login' : 'Sign Up' }}</h1>
       <div class="form-inputs-container">
-        <input type="email" class="input" placeholder="Email address">
-        <input type="password" class="input" placeholder="Password">
+        <div class="form-input-container">
+          <input type="email" class="input" placeholder="Email address" formControlName="email">
+          @if (authForm.get('email')?.errors?.['required'] && authForm.get('email')?.touched) {
+            <span class="error">Can't be empty</span>
+          } @else if(authForm.get('email')?.errors?.['email'] && authForm.get('email')?.touched) {
+            <span class="error">Invalid email</span>
+          }
+        </div>
+        <div class="form-input-container">
+          <input type="password" class="input" placeholder="Password" formControlName="password">
+          @if (authForm.get('password')?.errors?.['required'] && authForm.get('password')?.touched) {
+            <span class="error">Can't be empty</span>
+          } @else if(authForm.get('password')?.errors?.['pattern'] && authForm.get('password')?.touched) {
+            <span class="error">Invalid password</span>
+          }
+        </div>
+        @if(!isLoginMode){
+          <div class="form-input-container">
+            <input type="password" class="input" placeholder="Repeat password" formControlName="repeatedPassword">
+            @if (authForm.get('repeatedPassword')?.errors?.['required'] && authForm.get('repeatedPassword')?.touched) {
+              <span class="error">Can't be empty</span>
+            }
+            <!-- @else if(authForm.get('repeatedPassword')?.errors?.['pattern'] && authForm.get('repeatedPassword')?.touched) {
+              <span class="error">Invalid password</span>
+            } -->
+          </div>
+        }
       </div>
       <button class="auth-button" type="button">
-        Login to your account
+        {{ isLoginMode ? 'Login to your account' : 'Create an account' }}
       </button>
-      <p class="question">Don’t have an account? <a class="action">Sign Up</a></p>
+      <p class="question">{{ isLoginMode ? 'Don’t have an account?' : 'Already have an account?' }} <a class="action" (click)="switchAuthMode()">{{ isLoginMode ? 'Sign Up' : 'Login' }}</a></p>
     </div>
   </form>
 </div>

@@ -44,7 +44,11 @@
   margin-bottom: 2.3rem;
 }
 
-.container .form .form-container .form-inputs-container .input{
+.container .form .form-container .form-inputs-container .form-input-container{
+  position: relative;
+}
+
+.container .form .form-container .form-inputs-container .form-input-container .input{
   width: 100%;
   border: none;
   border-bottom: 1px solid var(--blue-3);
@@ -52,9 +56,21 @@
   background-color:transparent;
   padding-left: 1rem;
   padding-bottom: 1rem;
+  font-size: .9375rem;
+  font-weight: 300;
+  color: var(--white);
 }
 
-.container .form .form-container .form-inputs-container .input::placeholder{
+.container .form .form-container .form-inputs-container .form-input-container .error{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: .8125rem;
+  font-weight: 300;
+  color: var(--red);
+}
+
+.container .form .form-container .form-inputs-container .form-input-container .input::placeholder{
   font-size: .9375rem;
   font-weight: 300;
   color: var(--white);
