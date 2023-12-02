@@ -92,12 +92,7 @@
 
   .container .form{
     width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--blue-2);
-    padding-top: 2rem;
-    border-radius: 8px;
+    border-radius: 20px;
   }
 
   .container .form .form-container{
