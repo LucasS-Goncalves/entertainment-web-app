@@ -1,0 +1,37 @@
+.header{
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: var(--blue-2);
+}
+
+.header .logo{
+  width: 25px;
+  height: 20px;
+}
+
+.header .navigation{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header .navigation .link{
+  width: 16px;
+  height: 16px;
+}
+
+.header .navigation .link .icon{
+  width: 100%;
+  height: 100%;
+}
+
+.header .avatar{
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--white);
+  border-radius: 100%;
+}

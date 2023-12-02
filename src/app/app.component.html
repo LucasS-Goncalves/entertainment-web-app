@@ -1,1 +1,4 @@
-<app-auth></app-auth>
+@if (!hasRoute('auth')) {
+  <app-navbar></app-navbar>
+}
+<router-outlet></router-outlet>
