@@ -80,3 +80,44 @@
     height: 32px;
   }
 }
+
+@media(min-width: 1200px){
+
+  .header{
+    flex-direction: column;
+    top: 50%;
+    left: 2rem;
+    translate: 0 -50%;
+    width: 96px;
+    height: 93%;
+    padding: 2rem 0;
+  }
+
+  .header .logo{
+    cursor: pointer;
+  }
+
+  .header .navigation{
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    top: 120px;
+  }
+
+  .header .avatar{
+    width: 40px;
+    height: 40px;
+  }
+
+  .header .navigation .link{
+    cursor: pointer;
+  }
+
+  .header .navigation .link svg path{
+    transition: .2s;
+  }
+
+  .header .navigation .link:hover svg path{
+    fill: var(--red);
+  }
+}
