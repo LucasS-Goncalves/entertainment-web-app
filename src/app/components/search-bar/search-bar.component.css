@@ -1,0 +1,29 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar-container{
+  width: 343px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar-container .search-icon{
+  width: 24px;
+  height: 24px;
+}
+
+.search-bar-container .search-input{
+  width: 80%;
+  background: none;
+  border: none;
+  outline: none;
+
+}
+
+.search-bar-container .search-input:focus{
+  border-bottom: 1px solid var(--blue-3);
+}
