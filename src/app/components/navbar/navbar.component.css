@@ -45,3 +45,17 @@
   border: 1px solid var(--white);
   border-radius: 100%;
 }
+
+@media(min-width: 768px){
+
+  .header{
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    translate: -50%;
+    width: 719px;
+    height: 72px;
+    padding: 0;
+    border-radius: 12px;
+  }
+}
