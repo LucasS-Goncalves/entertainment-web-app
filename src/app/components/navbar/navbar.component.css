@@ -53,9 +53,30 @@
     top: 1rem;
     left: 50%;
     translate: -50%;
-    width: 719px;
+    width: 93%;
     height: 72px;
-    padding: 0;
     border-radius: 12px;
+  }
+
+  .header .logo{
+    width: 32px;
+    height: 25.6px;
+  }
+
+  .header .navigation{
+    gap: 2rem;
+  }
+
+  .header .navigation .link{
+    height: 20px;
+  }
+
+  .header .navigation .link svg{
+    transform: scale(1);
+  }
+
+  .header .avatar{
+    width: 32px;
+    height: 32px;
   }
 }
