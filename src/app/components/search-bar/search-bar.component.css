@@ -1,14 +1,16 @@
 .header{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-left: 1rem;
+  margin-top: 2rem;
 }
 
 .search-bar-container{
   width: 343px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .search-bar-container .search-icon{
@@ -21,7 +23,17 @@
   background: none;
   border: none;
   outline: none;
+  padding-bottom: .7rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--white);
+}
 
+.search-bar-container .search-input::placeholder{
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--white);
+  opacity: .5;
 }
 
 .search-bar-container .search-input:focus{
