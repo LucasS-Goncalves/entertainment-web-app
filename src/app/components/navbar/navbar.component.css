@@ -49,11 +49,6 @@
 @media(min-width: 768px){
 
   .header{
-    position: absolute;
-    top: 1rem;
-    left: 50%;
-    translate: -50%;
-    width: 93%;
     height: 72px;
     border-radius: 12px;
   }
@@ -83,7 +78,7 @@
 
 @media(min-width: 1200px){
 
-  .header{
+  /* .header{
     flex-direction: column;
     top: 50%;
     left: 2rem;
@@ -119,5 +114,5 @@
 
   .header .navigation .link:hover svg path{
     fill: var(--red);
-  }
+  } */
 }
