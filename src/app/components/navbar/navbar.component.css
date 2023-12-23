@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 1.2rem;
   background-color: var(--blue-2);
 }
 
@@ -76,15 +76,12 @@
   }
 }
 
-@media(min-width: 1200px){
+@media(min-width: 1440px){
 
-  /* .header{
+  .header{
     flex-direction: column;
-    top: 50%;
-    left: 2rem;
-    translate: 0 -50%;
     width: 96px;
-    height: 93%;
+    height: 93vh;
     padding: 2rem 0;
   }
 
@@ -114,5 +111,5 @@
 
   .header .navigation .link:hover svg path{
     fill: var(--red);
-  } */
+  }
 }

@@ -1,9 +1,8 @@
 .search-bar-container{
-  width: 100%;
+  width: 257px;
   display: flex;
   gap: 1rem;
-  padding: 0 1rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .search-bar-container .search-icon{
@@ -51,5 +50,12 @@
 
   .search-bar-container .search-input::placeholder{
     font-size: 1.5rem;
+  }
+}
+
+@media(min-width: 1440px){
+
+  .search-bar-container{
+    margin-top: 2.65rem;
   }
 }

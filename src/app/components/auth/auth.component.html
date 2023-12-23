@@ -35,7 +35,7 @@
           </div>
         }
       </div>
-      <button class="auth-button" type="button" (click)="onSubmitForm()" [disabled]="authForm.invalid">
+      <button class="auth-button" type="button" (click)="onSubmitForm()" >
         {{ isLoginMode ? 'Login to your account' : 'Create an account' }}
       </button>
       <p class="question">{{ isLoginMode ? 'Don’t have an account?' : 'Already have an account?' }} <a class="action" (click)="switchAuthMode()">{{ isLoginMode ? 'Sign Up' : 'Login' }}</a></p>

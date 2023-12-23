@@ -2,21 +2,43 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-
 }
 
+.container .components-container{
+  width: 100%;
+  padding-left: 1.2rem;
+}
 
 @media(min-width: 768px){
 
-  .navbar{
+  .container .navbar{
     width: 93%;
     align-self: center;
     margin-top: 1rem;
   }
 
-  .components-container{
+  .container .components-container{
     width: 93%;
     align-self: center;
   }
+}
 
+@media(min-width: 1440px){
+
+  .container{
+    flex-direction: row;
+    gap: 2rem;
+    padding-right: 2rem;
+  }
+
+  .container .navbar{
+    width: auto;
+    align-self: unset;
+    margin-top: 1rem;
+  }
+
+  .container .components-container{
+    width: auto;
+    align-self: flex-start;
+  }
 }

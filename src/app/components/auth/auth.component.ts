@@ -45,10 +45,6 @@ export class AuthComponent implements OnInit{
   }
 
   onSubmitForm(){
-    if(this.isLoginMode){
-      console.log('Logging In');
-    } else {
-      console.log("Signing Up");
-    }
+    console.log(this.authForm)
   }
 }

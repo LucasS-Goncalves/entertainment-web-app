@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="title">Trending</h1>
+  <div class="imageContainer" #imageContainer>
+    @for (photo of photos; track $index) {
+      <app-card [src]="photo"></app-card>
+  }
+  </div>
+</div>
+
+
+
+
