@@ -1,12 +1,53 @@
 <div class="container">
   <h1 class="title">Trending</h1>
-  <div class="imageContainer" #imageContainer>
+  <div class="imagesContainer" #imageContainer>
+    <button class="leftButton" (click)="scrollToLeft()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <g>
+          <polygon points="13.707 4.707 12.293 3.293 3.586 12 12.293 20.707 13.707 19.293 6.414 12 13.707 4.707"/>
+          <polygon points="19.707 4.707 18.293 3.293 9.586 12 18.293 20.707 19.707 19.293 12.414 12 19.707 4.707"/>
+        </g>
+      </svg>
+    </button>
     @for (photo of photos; track $index) {
-      <app-card [src]="photo"></app-card>
+      <div class="single-imageContainer">
+        <img [src]="photo.url" alt="" class="card">
+        <div class="bookmark-icons-div" (click)="isBookmarked($index)">
+          <img src="../../../../assets/icon-bookmark-empty.svg" alt="" class="bookmark-icon" *ngIf="!photo.isBookmarked">
+          <img src="../../../../assets/icon-bookmark-full.svg" alt="" class="bookmark-icon" *ngIf="photo.isBookmarked">
+        </div>
+        <div class="content-info">
+          <div class="content-info_info">
+            <span class="info">
+              {{photo.year}}
+            </span>
+            <span class="icon">
+              <img src="{{photo.type === 'Movie' ? '../../../../../../assets/icon-category-movie.svg' : '../../../../../../assets/icon-category-tv.svg'}}"
+              alt="">
+              <span>
+                {{photo.type}}
+              </span>
+            </span>
+            <span class="info rating">
+              {{photo.contentRating}}
+            </span>
+          </div>
+          <h4 class="content-info_title">
+            {{photo.title}}
+          </h4>
+        </div>
+      </div>
   }
+  <button class="rightButton" (click)="scrollToRight()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <g>
+        <polygon points="13.707 4.707 12.293 3.293 3.586 12 12.293 20.707 13.707 19.293 6.414 12 13.707 4.707"/>
+        <polygon points="19.707 4.707 18.293 3.293 9.586 12 18.293 20.707 19.707 19.293 12.414 12 19.707 4.707"/>
+      </g>
+    </svg>
+  </button>
   </div>
 </div>
-
 
 
 
