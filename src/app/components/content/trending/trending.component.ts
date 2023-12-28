@@ -65,11 +65,11 @@ export class TrendingComponent {
   @ViewChild('imageContainer') imageContainer!: ElementRef<HTMLDivElement>;
 
   scrollToLeft(){
-    this.imageContainer.nativeElement.scrollLeft = this.imageContainer.nativeElement.scrollLeft - 400;
+    this.imageContainer.nativeElement.scrollLeft = this.imageContainer.nativeElement.scrollLeft - 700;
   }
 
   scrollToRight(){
-    this.imageContainer.nativeElement.scrollLeft = this.imageContainer.nativeElement.scrollLeft + 400;
+    this.imageContainer.nativeElement.scrollLeft = this.imageContainer.nativeElement.scrollLeft + 700;
   }
 
   isBookmarked(index: number){

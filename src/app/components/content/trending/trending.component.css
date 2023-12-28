@@ -85,8 +85,8 @@
 
 .container .imagesContainer .single-imageContainer .content-info{
   position: absolute;
-  left: 25px;
-  bottom: 25px;
+  left: 20px;
+  bottom: 15px;
 }
 
 .container .imagesContainer .single-imageContainer .content-info .content-info_info{
@@ -178,6 +178,20 @@
     width: 470px;
     height: 230px;
   }
+
+  .container .imagesContainer .single-imageContainer .content-info{
+    bottom: 20px;
+  }
+
+  .container .imagesContainer .single-imageContainer .content-info .content-info_info .info,
+  .container .imagesContainer .single-imageContainer .content-info .content-info_info .icon span{
+    font-size: .9375rem;
+  }
+
+  .container .imagesContainer .single-imageContainer .content-info .content-info_title{
+    font-size: 1.5rem;
+  }
+
 }
 
 @media(min-width: 1440px){
